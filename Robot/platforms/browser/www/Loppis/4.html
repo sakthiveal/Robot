@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Loppis</title>
+    <script src="../../assets/dom-extensions.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+    <link rel="stylesheet" type="text/css" href="4/4.min.css">
+</head>
+
+<body id="contact_page" style="margin: 0;" class="noselect" data-id="1004" unselectable="on">
+    <div id="hide"></div>
+    <div id="left">
+        <div id="leftNav">
+            <div id="btnThumbnails" onclick="IDRViewer.toggleOutlines(false)" title="Thumbnails" class="navBtn inactive"></div>
+            <div id="btnOutlines" onclick="IDRViewer.toggleOutlines(true)" title="Bookmarks" class="navBtn inactive"></div>
+        </div>
+        <div id="leftContent">
+            <div id="thumbnailPanel"></div>
+            <div id="outlinePanel"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainNav">
+            <div id="btnSideToggle" onclick="IDRViewer.toggleThumbnails();" class="navBtn">
+                <div title="Sidebar"></div>
+            </div>
+            <div id="btnPrev" title="Previous Page" onclick="IDRViewer.prev()" class="navBtn"></div>
+            <select id="goBtn" onchange="IDRViewer.goToPage(0)">
+            </select>
+            <span id="pgCount"></span>
+            <div id="btnNext" title="Next Page" onclick="IDRViewer.next()" class="navBtn"></div>
+            <div id="btnSelect" title="Select" onclick="IDRViewer.setSelectMode(0)" class="navBtn"></div>
+            <div id="btnMove" title="Pan" onclick="IDRViewer.setSelectMode(1)" class="navBtn"></div>
+            <div id="btnZoomOut" title="Zoom Out" onclick="IDRViewer.zoomOut()" class="navBtn"></div>
+            <select id="zoomBtn" onchange="IDRViewer.zoomUpdate()">
+                <option value="0">100%</option>
+                <option value="1">Actual Size</option>
+                <option value="2">Fit Width</option>
+                <option value="3">Fit Height</option>
+                <option value="4">Fit Page</option>
+                <option value="5">Automatic</option>
+            </select>
+            <div id="btnZoomIn" title="Zoom In" onclick="IDRViewer.zoomIn()" class="navBtn"></div>
+            <div id="btnFullscreen" title="Fullscreen" onclick="IDRViewer.toggleFullScreen();" class="navBtn closed"></div>
+        </div>
+        <div id="mainContent">
+            <div id="contentContainer">
+                <div id="jpedal" style="overflow: hidden; position:relative; width: 1125px; height: 1125px;">
+                    <!-- Begin embedded font definitions -->
+                    <style id="fonts4" type="text/css">
+                    @font-face {
+                        font-family: MajemaSkol4;
+                        src: url("4/fonts/MajemaSkol.woff") format("woff");
+                    }
+                    </style>
+                    <!-- End embedded font definitions -->
+                    <div id="t1_4" class="t s1_4">.</div>
+                    <div id="t2_4" class="t s2_4">LOPPIS</div>
+                    <div id="t3_4" class="t s3_4" onclick="resetForm()">Rensa textfält</div>
+                    <div id="t4_4" class="t s3_4" onclick="location.href='2.html'">Välj sida</div>
+                    <div id="t5_4" class="t s3_4" onclick="location.href='../index.html'">Välj kapitel </div>
+                    <div id="t6_4" class="t s4_4">SKRIVNING</div>
+                    <div id="t7_4" class="t s5_4">Meningar</div>
+                    <div id="t8_4" class="t s6_4">Skriv klart meningarna.</div>
+                    <div id="t9_4" class="t s6_4">Läs för en kamrat.</div>
+                    <div id="ta_4" class="t s6_4">Rita och skriv om en sak.</div>
+                    <div id="tb_4" class="t s1_4">Här är en</div>
+                    <div id="tc_4" class="t s1_4">Här är en</div>
+                    <div id="td_4" class="t s1_4">Här är ett</div>
+                    <div id="te_4" class="t s1_4">Här är en</div>
+                    <div id="tf_4" class="t s1_4">Här är en</div>
+                    <div id="tg_4" class="t s1_4">.</div>
+                    <div id="th_4" class="t s1_4">.</div>
+                    <div id="ti_4" class="t s1_4">.</div>
+                    <div id="tj_4" class="t s1_4">.</div>
+                    <div id="tk_4" class="t s1_4">.</div>
+                    <!-- <div id="tl_4" class="t s7_4">Här</div> -->
+                    <div id="tm_4" class="t s8_4">robot</div>
+                    <div id="tn_4" class="t s8_4">nalle</div>
+                    <div id="to_4" class="t s8_4">lås</div>
+                    <div id="tp_4" class="t s8_4">bil</div>
+                    <div id="tq_4" class="t s8_4">bok</div>
+                    <!-- Begin page background -->
+                    <form>
+                        <input type="button" tabindex="1" id="Valj_kapitel" onclick="location.href='../index.html'" style="cursor:pointer;" title="Välj kapitel" />
+                        <input type="button" tabindex="2" id="Valj_sida" onclick="location.href='2.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="3" id="reset" onclick="resetForm()" style="cursor:pointer;" title="" />
+                        <input type="button" tabindex="4" id="page3" onclick="location.href='3.html'" style="cursor:pointer;" title="Loppis" />
+                        <input type="button" tabindex="5" id="page4" onclick="location.href='5.html'" style="cursor:pointer;" title="En och ett" />
+                        <input type="text" tabindex="6" maxlength="17" class="textbox page4 loppis" id="textbox1" name="textbox1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="7" maxlength="17" class="textbox page4 loppis" id="textbox2" name="textbox2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="8" maxlength="17" class="textbox page4 loppis" id="textbox3" name="textbox3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="9" maxlength="17" class="textbox page4 loppis" id="textbox4" name="textbox4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="10" maxlength="17" class="textbox page4 loppis" id="textbox5" name="textbox5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="11" maxlength="35" class="textbox page4 loppis" id="textbox6" name="textbox6" onfocus="TrackInsightsTextBoxes(this)"/>
+                    </form>
+                    <div id="pgOverlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+                    <div id="pg4">
+                        <object width="1125" height="1125" data="4/4.svg" type="image/svg+xml" id="Loppis_4" style="width:1125px; height:1125px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object>
+                    </div>
+                    <!-- End page background -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/jquery.min.js"></script>
+    <script src="../../assets/app.min.js" type="text/javascript"></script>    
+    <script src="../../assets/IDRViewer.min.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Loppis</title>
+    <script src="../../assets/dom-extensions.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+    <link rel="stylesheet" type="text/css" href="6/6.min.css">
+</head>
+
+<body id="contact_page" style="margin: 0;" class="noselect" data-id="1006" unselectable="on">
+    <div id="hide"></div>
+    <div id="left">
+        <div id="leftNav">
+            <div id="btnThumbnails" onclick="IDRViewer.toggleOutlines(false)" title="Thumbnails" class="navBtn inactive"></div>
+            <div id="btnOutlines" onclick="IDRViewer.toggleOutlines(true)" title="Bookmarks" class="navBtn inactive"></div>
+        </div>
+        <div id="leftContent">
+            <div id="thumbnailPanel"></div>
+            <div id="outlinePanel"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainNav">
+            <div id="btnSideToggle" onclick="IDRViewer.toggleThumbnails();" class="navBtn">
+                <div title="Sidebar"></div>
+            </div>
+            <div id="btnPrev" title="Previous Page" onclick="IDRViewer.prev()" class="navBtn"></div>
+            <select id="goBtn" onchange="IDRViewer.goToPage(0)">
+            </select>
+            <span id="pgCount"></span>
+            <div id="btnNext" title="Next Page" onclick="IDRViewer.next()" class="navBtn"></div>
+            <div id="btnSelect" title="Select" onclick="IDRViewer.setSelectMode(0)" class="navBtn"></div>
+            <div id="btnMove" title="Pan" onclick="IDRViewer.setSelectMode(1)" class="navBtn"></div>
+            <div id="btnZoomOut" title="Zoom Out" onclick="IDRViewer.zoomOut()" class="navBtn"></div>
+            <select id="zoomBtn" onchange="IDRViewer.zoomUpdate()">
+                <option value="0">100%</option>
+                <option value="1">Actual Size</option>
+                <option value="2">Fit Width</option>
+                <option value="3">Fit Height</option>
+                <option value="4">Fit Page</option>
+                <option value="5">Automatic</option>
+            </select>
+            <div id="btnZoomIn" title="Zoom In" onclick="IDRViewer.zoomIn()" class="navBtn"></div>
+            <div id="btnFullscreen" title="Fullscreen" onclick="IDRViewer.toggleFullScreen();" class="navBtn closed"></div>
+        </div>
+        <div id="mainContent">
+            <div id="contentContainer">
+                <div id="jpedal" style="overflow: hidden; position:relative; width: 1125px; height: 1125px;">
+                    <div id="t1_6" class="t s1_6">LOPPIS</div>
+                    <div id="t2_6" class="t s2_6" onclick="resetForm()">Rensa textfält</div>
+                    <div id="t3_6" class="t s2_6" onclick="location.href='2.html'">Välj sida</div>
+                    <div id="t4_6" class="t s2_6" onclick="location.href='../index.html'">Välj kapitel </div>
+                    <div id="t5_6" class="t s3_6">SPRÅKLÄRA</div>
+                    <div id="t6_6" class="t s4_6">Rimord</div>
+                    <div id="t7_6" class="t s5_6">Lös ordﬂätan. Skriv rimorden. Använd orden i ordbanken.</div>
+                    <div id="t8_6" class="t s6_6">bil</div>
+                    <div id="t9_6" class="t s7_6">och </div>
+                    <div id="ta_6" class="t s6_6">pil</div>
+                    <div id="tb_6" class="t s7_6">och</div>
+                    <div id="tc_6" class="t s7_6">och</div>
+                    <div id="td_6" class="t s7_6">och</div>
+                    <div id="te_6" class="t s7_6">bok</div>
+                    <div id="tf_6" class="t s7_6">bil</div>
+                    <div id="tg_6" class="t s7_6">mus</div>
+                    <div id="th_6" class="t s7_6">nål</div>
+                    <div id="ti_6" class="t s7_6">lok</div>
+                    <div id="tj_6" class="t s7_6">hus</div>
+                    <div id="tk_6" class="t s7_6">mål</div>
+                    <div id="tl_6" class="t s7_6">pil</div>
+                    <!-- Begin page background -->
+                    <form>
+                        <input type="button" tabindex="1" id="Valj_kapitel" onclick="location.href='../index.html'" style="cursor:pointer;" title="Välj kapitel" />
+                        <input type="button" tabindex="2" id="Valj_sida" onclick="location.href='2.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="3" id="reset" onclick="resetForm()" style="cursor:pointer;" title="" />
+                        <input type="button" tabindex="4" id="page5" onclick="location.href='5.html'" style="cursor:pointer;" title="En och ett" />
+                        <input type="text" tabindex="5" maxlength="1" class="textbox page6 loppis" id="textbox1" name="textbox1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="6" maxlength="1" class="textbox page6 loppis" id="textbox2" name="textbox2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="7" maxlength="1" class="textbox page6 loppis" id="textbox3" name="textbox3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="8" maxlength="1" class="textbox page6 loppis" id="textbox4" name="textbox4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="9" maxlength="1" class="textbox page6 loppis" id="textbox5" name="textbox5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="10" maxlength="1" class="textbox page6 loppis" id="textbox6" name="textbox6" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="11" maxlength="1" class="textbox page6 loppis" id="textbox7" name="textbox7" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="12" maxlength="1" class="textbox page6 loppis" id="textbox8" name="textbox8" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="13" maxlength="1" class="textbox page6 loppis" id="textbox9" name="textbox9" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="14" maxlength="1" class="textbox page6 loppis" id="textbox10" name="textbox10" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="15" maxlength="5" class="textbox page6 loppis" id="textbox11" name="textbox11" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="16" maxlength="5" class="textbox page6 loppis" id="textbox12" name="textbox12" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="17" maxlength="1" class="textbox page6 loppis" id="textbox13" name="textbox13" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="18" maxlength="1" class="textbox page6 loppis" id="textbox14" name="textbox14" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="19" maxlength="1" class="textbox page6 loppis" id="textbox15" name="textbox15" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="20" maxlength="1" class="textbox page6 loppis" id="textbox16" name="textbox16" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="21" maxlength="1" class="textbox page6 loppis" id="textbox17" name="textbox17" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="22" maxlength="5" class="textbox page6 loppis" id="textbox23" name="textbox23" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="23" maxlength="5" class="textbox page6 loppis" id="textbox24" name="textbox24" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="24" maxlength="1" class="textbox page6 loppis" id="textbox18" name="textbox18" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="25" maxlength="1" class="textbox page6 loppis" id="textbox19" name="textbox19" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="26" maxlength="1" class="textbox page6 loppis" id="textbox20" name="textbox20" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="27" maxlength="1" class="textbox page6 loppis" id="textbox21" name="textbox21" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="28" maxlength="1" class="textbox page6 loppis" id="textbox22" name="textbox22" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="29" maxlength="5" class="textbox page6 loppis" id="textbox25" name="textbox25" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="30" maxlength="5" class="textbox page6 loppis" id="textbox26" name="textbox26" onfocus="TrackInsightsTextBoxes(this)"/>
+                    </form>
+                    <div id="pgOverlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+                    <div id="pg6">
+                        <object width="1125" height="1125" data="6/6.svg" type="image/svg+xml" id="Loppis_6" style="width:1125px; height:1125px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object>
+                    </div>
+                    <!-- End page background -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/jquery.min.js"></script>
+    <script src="../../assets/app.min.js" type="text/javascript"></script>    
+    <script src="../../assets/IDRViewer.min.js" type="text/javascript"></script>
+</body>
+
+</html>

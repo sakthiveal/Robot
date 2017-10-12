@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html >
+<html lang="en">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Nöjesfältet</title>
+    <script src="../../assets/dom-extensions.min.js" type="text/javascript"></script>
+
+    <link rel="stylesheet" type="text/css" href="../../assets/app.min.css">
+    <link rel="stylesheet" type="text/css" href="5/5.min.css">
+</head>
+
+<body id="contact_page" style="margin: 0;" class="noselect" data-id="4005" unselectable="on">
+    <div id="hide"></div>
+    <div id="left">
+        <div id="leftNav">
+            <div id="btnThumbnails" onclick="IDRViewer.toggleOutlines(false)" title="Thumbnails" class="navBtn inactive"></div>
+            <div id="btnOutlines" onclick="IDRViewer.toggleOutlines(true)" title="Bookmarks" class="navBtn inactive"></div>
+        </div>
+        <div id="leftContent">
+            <div id="thumbnailPanel"></div>
+            <div id="outlinePanel"></div>
+        </div>
+    </div>
+    <div id="main">
+        <div id="mainNav">
+            <div id="btnSideToggle" onclick="IDRViewer.toggleThumbnails();" class="navBtn">
+                <div title="Sidebar"></div>
+            </div>
+            <div id="btnPrev" title="Previous Page" onclick="IDRViewer.prev()" class="navBtn"></div>
+            <select id="goBtn" onchange="IDRViewer.goToPage(0)">
+            </select>
+            <span id="pgCount"></span>
+            <div id="btnNext" title="Next Page" onclick="IDRViewer.next()" class="navBtn"></div>
+            <div id="btnSelect" title="Select" onclick="IDRViewer.setSelectMode(0)" class="navBtn"></div>
+            <div id="btnMove" title="Pan" onclick="IDRViewer.setSelectMode(1)" class="navBtn"></div>
+            <div id="btnZoomOut" title="Zoom Out" onclick="IDRViewer.zoomOut()" class="navBtn"></div>
+            <select id="zoomBtn" onchange="IDRViewer.zoomUpdate()">
+                <option value="0">100%</option>
+                <option value="1">Actual Size</option>
+                <option value="2">Fit Width</option>
+                <option value="3">Fit Height</option>
+                <option value="4">Fit Page</option>
+                <option value="5">Automatic</option>
+            </select>
+            <div id="btnZoomIn" title="Zoom In" onclick="IDRViewer.zoomIn()" class="navBtn"></div>
+            <div id="btnFullscreen" title="Fullscreen" onclick="IDRViewer.toggleFullScreen();" class="navBtn closed"></div>
+        </div>
+        <div id="mainContent">
+            <div id="contentContainer">
+                <div id="jpedal" style="overflow: hidden; position:relative; width: 1125px; height: 1125px;">
+                    <!-- Begin text definitions (Positioned/styled in CSS) -->
+                    <div id="t1_5" class="t s1_5">.</div>
+                    <div id="t2_5" class="t s1_5">.</div>
+                    <div id="t3_5" class="t s1_5">.</div>
+                    <div id="t4_5" class="t s1_5">.</div>
+                    <div id="t5_5" class="t s1_5">.</div>
+                    <div id="t6_5" class="t s2_5">NÖJESFÄLTET</div>
+                    <div id="t7_5" class="t s3_5" onclick="resetForm()">Rensa textfält</div>
+                    <div id="t8_5" class="t s3_5" onclick="location.href='2.html'">Välj sida</div>
+                    <div id="t9_5" class="t s3_5" onclick="location.href='../index.html'">Välj kapitel </div>
+                    <div id="ta_5" class="t s4_5">SPRÅKLÄRA</div>
+                    <div id="tb_5" class="t s5_5">Stor bokstav i namn</div>
+                    <div id="tc_5" class="t s6_5">Hitta på namn till djuren. Skriv.</div>
+                    <div id="td_5" class="t s6_5">Skriv vad djuren heter.</div>
+                    <div id="te_5" class="t s6_5">Läs för en kamrat.</div>
+                    <div id="tf_5" class="t s7_5">Katten </div>
+                    <div id="tg_5" class="t s7_5">heter</div>
+                    <!-- End text definitions -->
+                    <!-- Begin page background -->
+                    <form>
+                        <input type="button" tabindex="1" id="Valj_kapitel" onclick="location.href='../index.html'" style="cursor:pointer;" title="Välj kapitel" />
+                        <input type="button" tabindex="2" id="Valj_sida" onclick="location.href='2.html'" style="cursor:pointer;" title="Välj sida" />
+                        <input type="button" tabindex="3" id="reset" onclick="resetForm()" style="cursor:pointer;" title="" />
+                        <input type="button" tabindex="4" id="page4" onclick="location.href='4.html'" style="cursor:pointer;" title="Nöjesfältet" />
+                        <input type="button" tabindex="5" id="page6" onclick="location.href='6.html'" style="cursor:pointer;" title="Lägesord" />
+                        <input type="text" tabindex="6" maxlength="15" class="textbox page5 nojesfaltet" id="textbox1" name="textbox1" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="7" maxlength="15" class="textbox page5 nojesfaltet" id="textbox2" name="textbox2" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="8" maxlength="15" class="textbox page5 nojesfaltet" id="textbox3" name="textbox3" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="9" maxlength="15" class="textbox page5 nojesfaltet" id="textbox4" name="textbox4" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="10" maxlength="15" class="textbox page5 nojesfaltet" id="textbox5" name="textbox5" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="11" maxlength="25" class="textbox page5 nojesfaltet" id="textbox6" name="textbox6" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="12" maxlength="14" class="textbox page5 nojesfaltet" id="textbox7" name="textbox7" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="13" maxlength="10" class="textbox page5 nojesfaltet" id="textbox8" name="textbox8" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="14" maxlength="25" class="textbox page5 nojesfaltet" id="textbox9" name="textbox9" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="15" maxlength="14" class="textbox page5 nojesfaltet" id="textbox10" name="textbox10" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="16" maxlength="10" class="textbox page5 nojesfaltet" id="textbox11" name="textbox11" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="17" maxlength="25" class="textbox page5 nojesfaltet" id="textbox12" name="textbox12" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="18" maxlength="14" class="textbox page5 nojesfaltet" id="textbox13" name="textbox13" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="19" maxlength="10" class="textbox page5 nojesfaltet" id="textbox14" name="textbox14" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="20" maxlength="25" class="textbox page5 nojesfaltet" id="textbox15" name="textbox15" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="21" maxlength="14" class="textbox page5 nojesfaltet" id="textbox16" name="textbox16" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="22" maxlength="10" class="textbox page5 nojesfaltet" id="textbox17" name="textbox17" onfocus="TrackInsightsTextBoxes(this)"/>
+                        <input type="text" tabindex="23" maxlength="25" class="textbox page5 nojesfaltet" id="textbox18" name="textbox18" onfocus="TrackInsightsTextBoxes(this)"/>
+                    </form>
+                    <div id="pgOverlay" style="width:100%; height:100%; position:absolute; z-index:1; background-color:rgba(0,0,0,0); -webkit-user-select: none;"></div>
+                    <div id="pg5">
+                        <object width="1125" height="1125" data="5/5.svg" type="image/svg+xml" id="Nojesfaltet_5" style="width:1125px; height:1125px; background-color:white; -moz-transform:scale(1); z-index: 0;"></object>
+                    </div>
+                    <!-- End page background -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/jquery.min.js"></script>
+    <script src="../../assets/app.min.js" type="text/javascript"></script>    
+    <script src="../../assets/IDRViewer.min.js" type="text/javascript"></script>
+</body>
+
+</html>
